@@ -330,7 +330,7 @@
                 
               
 
-              <time title="创建时间：2018-05-19 14:43:25 / 修改时间：14:54:25" itemprop="dateCreated datePublished" datetime="2018-05-19T14:43:25+08:00">2018-05-19</time>
+              <time title="创建时间：2018-05-19 14:43:25 / 修改时间：15:14:57" itemprop="dateCreated datePublished" datetime="2018-05-19T14:43:25+08:00">2018-05-19</time>
             
 
             
@@ -383,51 +383,6 @@
 <li>使用 Github Page + Hexo 自己搭建博客；优点：样式自由，不再受限于各大平台（自由） 缺点：有一定的技术门槛，相对麻烦些</li>
 </ol>
 <p>我看大神们的博客貌似都是用Hexo写的，我也参考他们搭建了一个，下面是步骤👇</p>
-<p>#综述：</p>
-<p>##搭建过程一般分为以下几步：</p>
-<ol>
-<li>安装 Node.js</li>
-<li>安装 Git 软件</li>
-<li>配置 Hexo</li>
-<li>关联 Hexo、Github Page</li>
-<li>写博客、发布文章</li>
-<li>优化：更换主题等</li>
-</ol>
-<p>##安装 Node.js</p>
-<ol>
-<li>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境，可以在非浏览器环境下，解释运行 JS 代码。</li>
-<li>作用是用来生成静态页面的</li>
-<li>Node.js官网（<a href="http://nodejs.cn/）下载相应平台的最新版本，一路安装即可" target="_blank" rel="noopener">http://nodejs.cn/）下载相应平台的最新版本，一路安装即可</a></li>
-</ol>
-<p>##安装 Git</p>
-<ol>
-<li>Mac系统自带Git这不需要操作，可使用 终端命令 git - -version 查看版本</li>
-</ol>
-<p>##配置 Hexo<br>Hexo是一款基于Node.js的静态博客框架，不仅可通过 Markdown 编写文章，还可以使用 Hexo 提供的标签插件来快速的插入特定形式的内容，生成静态网页。</p>
-<p>####官网： <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">https://hexo.io/zh-cn/</a></p>
-<p>##步骤：</p>
-<ol>
-<li>在合适的位置新建文件夹，如 hexo； cd 命令进入到该文件夹内</li>
-<li>执行命令安装 Hexo：  sudo npm install -g hexo</li>
-<li>初始化 hexo：  hexo init  （到这步，全部的安装工作已经完成！hexo就是你的博客根目录，所有的操作都在里面进行。 ）</li>
-<li>生成静态网页：生成前清除下缓存：hexo clean  ，  hexo generate（hexo g也可以）</li>
-<li>启动动本地服务，进行文章预览调试：  hexo server</li>
-<li>浏览器输入 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 就可以看到你的博客样式啦，后面还需把它发布到 Github上</li>
-</ol>
-<p>关联 Hexo、Github Page<br>配置 Github:<br>登录你的git账号，新建 repository ，名称格式必须为 yourname.github.io ，在浏览器输入该这地址就可以看到你的博客了</p>
-<p>##配置 hexo：</p>
-<ol>
-<li>用sublime/notepad++等文本编辑器打开_config.yml文件，修改参数信息 ：拉到最下面，修改deploy为以下代码，repository后面的是你的仓库地址<br>deploy:<br>type: git<br>repository: <a href="https://github.com/elfwalk/elfwalk.github.io" target="_blank" rel="noopener">https://github.com/elfwalk/elfwalk.github.io</a><br>branch: master</li>
-</ol>
-<p>修改相关网站信息：</p>
-<p>title: wangwlj测试所用博客<br>subtitle: 积跬步以至千里！<br>description: 网页描述<br>author: wangwlj<br>language: zh-CN<br>timezone: Asia/Shanghai</p>
-<p>###最后一步，发布到远程： hexo deploy</p>
-<p>其中会跳出Github登录，直接登录，如果没有问题，在浏览器输入qwerty200696（换成你的）.github.io/ 就可以看到了 (有可能稍有延迟）</p>
-<p>#错误记录：</p>
-<ol>
-<li>deploy not found： git</li>
-</ol>
-<p>执行命令 ： npm install hexo-deployer-git —save ，重新部署</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/05/19/我是如何一步一步搭建属于自己的博客的（Hexo-Github/#more" rel="contents">
