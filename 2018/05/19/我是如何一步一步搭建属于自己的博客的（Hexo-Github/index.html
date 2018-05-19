@@ -115,7 +115,7 @@
 <meta property="og:site_name" content="陈旭的博客">
 <meta property="og:description" content="我的个人博客链接：https://sunrisechen007.github.io/ 写在开始在开始前，我花了大约一天的时间去收集整理前人的经验，网上有很多写的非常详细易懂的文章，下面是我根据他们的博客整理出来的适合我使用的一篇教程 写博客的目的  培养自己的写作和总结能力 记录自己开发中实际遇到的问题，希望对他人有所帮助 给自己一个挑战，督促自己   写博客的方式  CSDN、博客园、简书等平台">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-19T08:46:21.426Z">
+<meta property="og:updated_time" content="2018-05-19T08:54:40.638Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我是如何一步一步搭建属于自己的博客的（Hexo-Github）">
 <meta name="twitter:description" content="我的个人博客链接：https://sunrisechen007.github.io/ 写在开始在开始前，我花了大约一天的时间去收集整理前人的经验，网上有很多写的非常详细易懂的文章，下面是我根据他们的博客整理出来的适合我使用的一篇教程 写博客的目的  培养自己的写作和总结能力 记录自己开发中实际遇到的问题，希望对他人有所帮助 给自己一个挑战，督促自己   写博客的方式  CSDN、博客园、简书等平台">
@@ -326,7 +326,7 @@
                 
               
 
-              <time title="创建时间：2018-05-19 14:43:25 / 修改时间：16:46:21" itemprop="dateCreated datePublished" datetime="2018-05-19T14:43:25+08:00">2018-05-19</time>
+              <time title="创建时间：2018-05-19 14:43:25 / 修改时间：16:54:40" itemprop="dateCreated datePublished" datetime="2018-05-19T14:43:25+08:00">2018-05-19</time>
             
 
             
@@ -402,9 +402,11 @@
 </li>
 </ol>
 </blockquote>
-<h2 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h2><ol>
+<h2 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h2><blockquote>
+<ul>
 <li>Mac系统自带Git这不需要操作，可使用 终端命令 git - -version 查看版本</li>
-</ol>
+</ul>
+</blockquote>
 <h2 id="配置-Hexo"><a href="#配置-Hexo" class="headerlink" title="配置 Hexo"></a>配置 Hexo</h2><p>Hexo是一款基于Node.js的静态博客框架，不仅可通过 Markdown 编写文章，还可以使用 Hexo 提供的标签插件来快速的插入特定形式的内容，生成静态网页。</p>
 <h4 id="官网：-https-hexo-io-zh-cn-https-hexo-io-zh-cn"><a href="#官网：-https-hexo-io-zh-cn-https-hexo-io-zh-cn" class="headerlink" title="官网： [https://hexo.io/zh-cn/] (https://hexo.io/zh-cn/)"></a>官网： [<a href="https://hexo.io/zh-cn/]" target="_blank" rel="noopener">https://hexo.io/zh-cn/]</a> (<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">https://hexo.io/zh-cn/</a>)</h4><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><blockquote>
 <ol>
@@ -420,9 +422,9 @@
 </blockquote>
 <p>关联 Hexo、Github Page<br>配置 Github:<br>登录你的git账号，新建 repository ，名称格式必须为 yourname.github.io ，在浏览器输入该这地址就可以看到你的博客了</p>
 <h2 id="配置-hexo"><a href="#配置-hexo" class="headerlink" title="配置 hexo"></a>配置 hexo</h2><blockquote>
-<p> 用sublime/notepad++等文本编辑器打开_config.yml文件，修改参数信息 ：拉到最下面，修改deploy为以下代码，repository后面的是你的仓库地址<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">type: git </span><br><span class="line">repository: https://github.com/elfwalk/elfwalk.github.io</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure></p>
+<p> 用sublime/notepad++等文本编辑器打开_config.yml文件，修改参数信息 ：拉到最下面，修改deploy为以下代码，repository后面的是你的仓库地址<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">type: git </span><br><span class="line">repository: https://github.com/elfwalk/elfwalk.github.io</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure></p>
 </blockquote>
-<h4 id="修改相关网站信息："><a href="#修改相关网站信息：" class="headerlink" title="修改相关网站信息："></a>修改相关网站信息：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: wangwlj测试所用博客</span><br><span class="line">subtitle: 积跬步以至千里！</span><br><span class="line">description: 网页描述</span><br><span class="line">author: wangwlj</span><br><span class="line">language: zh-CN</span><br><span class="line">timezone: Asia/Shanghai</span><br></pre></td></tr></table></figure>
+<h4 id="修改相关网站信息："><a href="#修改相关网站信息：" class="headerlink" title="修改相关网站信息："></a>修改相关网站信息：</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: wangwlj 测试所用博客</span><br><span class="line">subtitle: 积跬步以至千里！</span><br><span class="line">description: 网页描述</span><br><span class="line">author:  wangwlj</span><br><span class="line">language: zh-CN</span><br><span class="line">timezone: Asia/Shanghai</span><br></pre></td></tr></table></figure>
 <h3 id="最后一步，发布到远程：-hexo-deploy"><a href="#最后一步，发布到远程：-hexo-deploy" class="headerlink" title="最后一步，发布到远程： hexo deploy"></a>最后一步，发布到远程： hexo deploy</h3><blockquote>
 <p>其中会跳出Github登录，直接登录，如果没有问题，在浏览器输入qwerty200696（换成你的）.github.io/ 就可以看到了 (有可能稍有延迟）</p>
 </blockquote>
@@ -474,22 +476,6 @@
       
       
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2018/05/18/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
       
 
       
@@ -560,7 +546,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">1</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
