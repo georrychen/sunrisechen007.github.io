@@ -115,7 +115,7 @@
 <meta property="og:site_name" content="陈旭的博客">
 <meta property="og:description" content="我的个人博客链接：https://sunrisechen007.github.io/ 写博客的目的  培养自己的写作和总结能力 记录自己开发中实际遇到的问题，希望对他人有所帮助 给自己一个挑战，督促自己   写博客的方式  CSDN、博客园、简书等平台，提供了框架，直接在里面写文章即可； 优点： 简单方便  缺点：样式固定 使用 Github Page + Hexo 自己搭建博客；优点：样式自由，">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-19T09:05:51.942Z">
+<meta property="og:updated_time" content="2018-05-21T09:24:30.649Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我是如何一步一步搭建属于自己的博客的（Hexo-Github）">
 <meta name="twitter:description" content="我的个人博客链接：https://sunrisechen007.github.io/ 写博客的目的  培养自己的写作和总结能力 记录自己开发中实际遇到的问题，希望对他人有所帮助 给自己一个挑战，督促自己   写博客的方式  CSDN、博客园、简书等平台，提供了框架，直接在里面写文章即可； 优点： 简单方便  缺点：样式固定 使用 Github Page + Hexo 自己搭建博客；优点：样式自由，">
@@ -326,12 +326,24 @@
                 
               
 
-              <time title="创建时间：2018-05-19 14:43:25 / 修改时间：17:05:51" itemprop="dateCreated datePublished" datetime="2018-05-19T14:43:25+08:00">2018-05-19</time>
+              <time title="创建时间：2018-05-19 14:43:25" itemprop="dateCreated datePublished" datetime="2018-05-19T14:43:25+08:00">2018-05-19</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-05-21 17:24:30" itemprop="dateModified" datetime="2018-05-21T17:24:30+08:00">2018-05-21</time>
               
             
           </span>
@@ -406,8 +418,8 @@
 <li>Mac系统自带Git这不需要操作，可使用 终端命令 git - -version 查看版本</li>
 </ul>
 </blockquote>
-<h2 id="配置-Hexo"><a href="#配置-Hexo" class="headerlink" title="配置 Hexo"></a>配置 Hexo</h2><p>Hexo是一款基于Node.js的静态博客框架，不仅可通过 Markdown 编写文章，还可以使用 Hexo 提供的标签插件来快速的插入特定形式的内容，生成静态网页。</p>
-<h4 id="官网：-https-hexo-io-zh-cn-https-hexo-io-zh-cn"><a href="#官网：-https-hexo-io-zh-cn-https-hexo-io-zh-cn" class="headerlink" title="官网： [https://hexo.io/zh-cn/] (https://hexo.io/zh-cn/)"></a>官网： [<a href="https://hexo.io/zh-cn/]" target="_blank" rel="noopener">https://hexo.io/zh-cn/]</a> (<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">https://hexo.io/zh-cn/</a>)</h4><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><blockquote>
+<h2 id="配置-Hexo"><a href="#配置-Hexo" class="headerlink" title="配置 Hexo"></a>配置 Hexo</h2><p>Hexo是一款基于Node.js的静态博客框架，不仅可通过 Markdown 编写文章，还可以使用 Hexo 提供的标签插件来快速的插入特定形式的内容，生成静态网页。 官网地址： [<a href="https://hexo.io/zh-cn/]" target="_blank" rel="noopener">https://hexo.io/zh-cn/]</a> (<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">https://hexo.io/zh-cn/</a>)</p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><blockquote>
 <ol>
 <li>在合适的位置新建文件夹，如 hexo； cd 命令进入到该文件夹内<ol start="2">
 <li>执行命令安装 Hexo：  sudo npm install -g hexo</li>
@@ -423,11 +435,11 @@
 <h2 id="配置-hexo"><a href="#配置-hexo" class="headerlink" title="配置 hexo"></a>配置 hexo</h2><blockquote>
 <p> 用sublime/notepad++等文本编辑器打开_config.yml文件，修改参数信息 ：拉到最下面，修改deploy为以下代码，repository后面的是你的仓库地址<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">type: git </span><br><span class="line">repository: https://github.com/elfwalk/elfwalk.github.io</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure></p>
 </blockquote>
-<h4 id="修改相关网站信息："><a href="#修改相关网站信息：" class="headerlink" title="修改相关网站信息："></a>修改相关网站信息：</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: wangwlj 测试所用博客</span><br><span class="line">subtitle: 积跬步以至千里！</span><br><span class="line">description: 网页描述</span><br><span class="line">author:  wangwlj</span><br><span class="line">language: zh-CN</span><br><span class="line">timezone: Asia/Shanghai</span><br></pre></td></tr></table></figure>
-<h3 id="最后一步，发布到远程：-hexo-deploy"><a href="#最后一步，发布到远程：-hexo-deploy" class="headerlink" title="最后一步，发布到远程： hexo deploy"></a>最后一步，发布到远程： hexo deploy</h3><blockquote>
+<p>修改相关网站信息：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: wangwlj 测试所用博客</span><br><span class="line">subtitle: 积跬步以至千里！</span><br><span class="line">description: 网页描述</span><br><span class="line">author:  wangwlj</span><br><span class="line">language: zh-CN</span><br><span class="line">timezone: Asia/Shanghai</span><br></pre></td></tr></table></figure></p>
+<h2 id="最后一步，发布到远程：-hexo-deploy"><a href="#最后一步，发布到远程：-hexo-deploy" class="headerlink" title="最后一步，发布到远程： hexo deploy"></a>最后一步，发布到远程： hexo deploy</h2><blockquote>
 <p>其中会跳出Github登录，直接登录，如果没有问题，在浏览器输入qwerty200696（换成你的）.github.io/ 就可以看到了 (有可能稍有延迟）</p>
 </blockquote>
-<h3 id="发布更新博客："><a href="#发布更新博客：" class="headerlink" title="发布更新博客："></a>发布更新博客：</h3><blockquote>
+<h2 id="发布更新博客："><a href="#发布更新博客：" class="headerlink" title="发布更新博客："></a>发布更新博客：</h2><blockquote>
 <p>hexo d -g</p>
 </blockquote>
 <h2 id="错误记录："><a href="#错误记录：" class="headerlink" title="错误记录："></a>错误记录：</h2><blockquote>
@@ -585,7 +597,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写博客的目的"><span class="nav-number">1.</span> <span class="nav-text">写博客的目的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#写博客的方式"><span class="nav-number">2.</span> <span class="nav-text">写博客的方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建过程一般分为以下几步"><span class="nav-number">3.</span> <span class="nav-text">搭建过程一般分为以下几步</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-Node-js"><span class="nav-number">4.</span> <span class="nav-text">安装 Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-Git"><span class="nav-number">5.</span> <span class="nav-text">安装 Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-Hexo"><span class="nav-number">6.</span> <span class="nav-text">配置 Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#官网：-https-hexo-io-zh-cn-https-hexo-io-zh-cn"><span class="nav-number">6.0.1.</span> <span class="nav-text">官网： [https://hexo.io/zh-cn/] (https://hexo.io/zh-cn/)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#步骤"><span class="nav-number">7.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-hexo"><span class="nav-number">8.</span> <span class="nav-text">配置 hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#修改相关网站信息："><span class="nav-number">8.0.1.</span> <span class="nav-text">修改相关网站信息：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#最后一步，发布到远程：-hexo-deploy"><span class="nav-number">8.1.</span> <span class="nav-text">最后一步，发布到远程： hexo deploy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#发布更新博客："><span class="nav-number">8.2.</span> <span class="nav-text">发布更新博客：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#错误记录："><span class="nav-number">9.</span> <span class="nav-text">错误记录：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优化："><span class="nav-number">10.</span> <span class="nav-text">优化：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写博客的目的"><span class="nav-number">1.</span> <span class="nav-text">写博客的目的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#写博客的方式"><span class="nav-number">2.</span> <span class="nav-text">写博客的方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建过程一般分为以下几步"><span class="nav-number">3.</span> <span class="nav-text">搭建过程一般分为以下几步</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-Node-js"><span class="nav-number">4.</span> <span class="nav-text">安装 Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-Git"><span class="nav-number">5.</span> <span class="nav-text">安装 Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-Hexo"><span class="nav-number">6.</span> <span class="nav-text">配置 Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#步骤"><span class="nav-number">7.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-hexo"><span class="nav-number">8.</span> <span class="nav-text">配置 hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最后一步，发布到远程：-hexo-deploy"><span class="nav-number">9.</span> <span class="nav-text">最后一步，发布到远程： hexo deploy</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发布更新博客："><span class="nav-number">10.</span> <span class="nav-text">发布更新博客：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#错误记录："><span class="nav-number">11.</span> <span class="nav-text">错误记录：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优化："><span class="nav-number">12.</span> <span class="nav-text">优化：</span></a></li></ol></div>
             
 
           </div>
