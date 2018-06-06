@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="iOS开发," />
 
 
 
@@ -86,17 +86,21 @@
 
 
 
-<meta name="description" content="个人简介123姓名：陈旭毕业：安徽师范大学/软件工程专业QQ:  2235037295 致谢感谢您花时间阅读我的简历，希望有机会与您共事。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="欢迎查看简介信息">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta name="description" content="项目中使用到了 百度云推送 ，现记录一下遇到的问题 上传证书无效 现象 ：这个是百度推送的一个坑，Mac电脑系统 10.13 以上的，打包 pem 证书上传到百度那儿会提示你“证书无效” 正常应该是这个样子↓  原因： 10.13以下系统的 openssl 版本是 0.9.8zh，百度推送不接受高于 0.9.8 的 openssl 生成的 pem 证书（坑）  解决方案：   找一个版本低的电脑（">
+<meta name="keywords" content="iOS开发">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS开发-集成百度云推送遇到的问题">
+<meta property="og:url" content="http://yoursite.com/2018/06/06/iOS开发-集成百度云推送遇到的问题/index.html">
 <meta property="og:site_name" content="陈旭的博客">
-<meta property="og:description" content="个人简介123姓名：陈旭毕业：安徽师范大学/软件工程专业QQ:  2235037295 致谢感谢您花时间阅读我的简历，希望有机会与您共事。">
+<meta property="og:description" content="项目中使用到了 百度云推送 ，现记录一下遇到的问题 上传证书无效 现象 ：这个是百度推送的一个坑，Mac电脑系统 10.13 以上的，打包 pem 证书上传到百度那儿会提示你“证书无效” 正常应该是这个样子↓  原因： 10.13以下系统的 openssl 版本是 0.9.8zh，百度推送不接受高于 0.9.8 的 openssl 生成的 pem 证书（坑）  解决方案：   找一个版本低的电脑（">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-05T06:48:48.586Z">
+<meta property="og:image" content="http://yoursite.com/uploads/证书1.png">
+<meta property="og:image" content="http://yoursite.com/uploads/openssl0.9.8.png">
+<meta property="og:updated_time" content="2018-06-06T10:46:39.851Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="欢迎查看简介信息">
-<meta name="twitter:description" content="个人简介123姓名：陈旭毕业：安徽师范大学/软件工程专业QQ:  2235037295 致谢感谢您花时间阅读我的简历，希望有机会与您共事。">
+<meta name="twitter:title" content="iOS开发-集成百度云推送遇到的问题">
+<meta name="twitter:description" content="项目中使用到了 百度云推送 ，现记录一下遇到的问题 上传证书无效 现象 ：这个是百度推送的一个坑，Mac电脑系统 10.13 以上的，打包 pem 证书上传到百度那儿会提示你“证书无效” 正常应该是这个样子↓  原因： 10.13以下系统的 openssl 版本是 0.9.8zh，百度推送不接受高于 0.9.8 的 openssl 生成的 pem 证书（坑）  解决方案：   找一个版本低的电脑（">
+<meta name="twitter:image" content="http://yoursite.com/uploads/证书1.png">
 
 
 
@@ -138,7 +142,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/about/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/06/iOS开发-集成百度云推送遇到的问题/"/>
 
 
 
@@ -146,7 +150,7 @@
 
 <link href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css" rel="stylesheet">
 
-  <title>欢迎查看简介信息 | 陈旭的博客</title>
+  <title>iOS开发-集成百度云推送遇到的问题 | 陈旭的博客</title>
   
 
 
@@ -305,35 +309,223 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/06/iOS开发-集成百度云推送遇到的问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Georry Chen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/men.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="陈旭的博客">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">欢迎查看简介信息</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <h1 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">姓名：陈旭</span><br><span class="line">毕业：安徽师范大学/软件工程专业</span><br><span class="line">QQ:  2235037295</span><br></pre></td></tr></table></figure>
-<h1 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h1><p>感谢您花时间阅读我的简历，希望有机会与您共事。</p>
-
+          <h1 class="post-title" itemprop="name headline">iOS开发-集成百度云推送遇到的问题</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-06T17:25:42+08:00">
+                2018-06-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/06/06/iOS开发-集成百度云推送遇到的问题/" class="leancloud_visitors" data-flag-title="iOS开发-集成百度云推送遇到的问题">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  416
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>项目中使用到了 百度云推送 ，现记录一下遇到的问题</p>
+<h3 id="上传证书无效"><a href="#上传证书无效" class="headerlink" title="上传证书无效"></a>上传证书无效</h3><ol>
+<li><p><code>现象</code> ：这个是百度推送的一个坑，Mac电脑系统 10.13 以上的，打包 pem 证书上传到百度那儿会提示你“证书无效”</p>
+<p>正常应该是这个样子↓<br><img src="/uploads/证书1.png" alt="zhengshu"></p>
+</li>
+<li><p><code>原因</code>： 10.13以下系统的 openssl 版本是 0.9.8zh，百度推送不接受高于 0.9.8 的 openssl 生成的 pem 证书（坑）</p>
+</li>
+<li><p><code>解决方案</code>：</p>
+<blockquote>
+<ol>
+<li>找一个版本低的电脑（不现实）</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li>安装 openssl 的低版本 0.9.8zh </li>
+</ol>
+</blockquote>
+<blockquote>
+<ul>
+<li>首先到 <a href="https://www.openssl.org/source/old/0.9.x/" target="_blank" rel="noopener">https://www.openssl.org/source/old/0.9.x/</a>  下载 openssl 0.9.8zh 版本。<br> 网页加载可能会有点慢，多等一会就好<br> ↓<br><img src="/uploads/openssl0.9.8.png" alt="avatar"> </li>
+<li>打开终端执行两个命令:  <code>cd /usr/local/ 、</code>open .` 使用finder打开local文件夹，在里面新建一个文件夹 openssl （这个新建文件夹不可以在终端使用 mkdir 来创建，后面会有问题！）</li>
+<li>解压刚下载的压缩包、cd 到解压的目录</li>
+<li>执行命令： <code>./Configure darwin64-x86_64-cc --prefix=/usr/local/openssl --shared</code></li>
+<li>执行命令安装 openssl:<br><code>sudo make &amp;&amp; make install</code></li>
+<li>待安装完毕后，可执行命令 <code>/usr/local/openssl/bin/openssl version</code>查看下版本，成功会显示 <code>0.9.8zh</code></li>
+<li>生成pem证书，cd 到你 p12 证书所在路径（终端输入cd ,然后把证书拖进终端就可以显示证书路径了），然后执行命令：<br><code>/usr/local/openssl/bin/openssl pkcs12 -in 你的p12名字.p12 -out 输出的pem名字.pem -nodes</code> 执行完会让你输入 p12 证书的密码输入即可完成pem证书生成</li>
+<li>参考链接：<a href="https://www.cnblogs.com/zhaowenshuang/p/7668848.html" target="_blank" rel="noopener">https://www.cnblogs.com/zhaowenshuang/p/7668848.html</a></li>
+</ul>
+</blockquote>
+</li>
+</ol>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Georry Chen
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2018/06/06/iOS开发-集成百度云推送遇到的问题/" title="iOS开发-集成百度云推送遇到的问题">http://yoursite.com/2018/06/06/iOS开发-集成百度云推送遇到的问题/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/iOS开发/" rel="tag"># iOS开发</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/05/观看密码/" rel="next" title="观看密码">
+                <i class="fa fa-chevron-left"></i> 观看密码
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -441,7 +633,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#个人简介"><span class="nav-number">1.</span> <span class="nav-text">个人简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#致谢"><span class="nav-number">2.</span> <span class="nav-text">致谢</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#上传证书无效"><span class="nav-number">1.</span> <span class="nav-text">上传证书无效</span></a></li></ol></div>
             
 
           </div>

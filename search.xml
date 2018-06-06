@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[iOS开发-集成百度云推送遇到的问题]]></title>
+    <url>%2F2018%2F06%2F06%2FiOS%E5%BC%80%E5%8F%91-%E9%9B%86%E6%88%90%E7%99%BE%E5%BA%A6%E4%BA%91%E6%8E%A8%E9%80%81%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[项目中使用到了 百度云推送 ，现记录一下遇到的问题 上传证书无效 现象 ：这个是百度推送的一个坑，Mac电脑系统 10.13 以上的，打包 pem 证书上传到百度那儿会提示你“证书无效” 正常应该是这个样子↓ 原因： 10.13以下系统的 openssl 版本是 0.9.8zh，百度推送不接受高于 0.9.8 的 openssl 生成的 pem 证书（坑） 解决方案： 找一个版本低的电脑（不现实） 安装 openssl 的低版本 0.9.8zh 首先到 https://www.openssl.org/source/old/0.9.x/ 下载 openssl 0.9.8zh 版本。 网页加载可能会有点慢，多等一会就好 ↓ 打开终端执行两个命令: cd /usr/local/ 、open .` 使用finder打开local文件夹，在里面新建一个文件夹 openssl （这个新建文件夹不可以在终端使用 mkdir 来创建，后面会有问题！） 解压刚下载的压缩包、cd 到解压的目录 执行命令： ./Configure darwin64-x86_64-cc --prefix=/usr/local/openssl --shared 执行命令安装 openssl:sudo make &amp;&amp; make install 待安装完毕后，可执行命令 /usr/local/openssl/bin/openssl version查看下版本，成功会显示 0.9.8zh 生成pem证书，cd 到你 p12 证书所在路径（终端输入cd ,然后把证书拖进终端就可以显示证书路径了），然后执行命令：/usr/local/openssl/bin/openssl pkcs12 -in 你的p12名字.p12 -out 输出的pem名字.pem -nodes 执行完会让你输入 p12 证书的密码输入即可完成pem证书生成 参考链接：https://www.cnblogs.com/zhaowenshuang/p/7668848.html]]></content>
+      <tags>
+        <tag>iOS开发</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[观看密码]]></title>
     <url>%2F2018%2F06%2F05%2F%E8%A7%82%E7%9C%8B%E5%AF%86%E7%A0%81%2F</url>
     <content type="text"><![CDATA[我是要密码才能看的哦]]></content>
