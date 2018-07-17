@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[测试]]></title>
-    <url>%2F2018%2F07%2F17%2F%E4%BD%A0%E6%AF%8F%E5%A4%A9%E8%AF%BB%E4%B9%A6%E3%80%81%E5%81%A5%E8%BA%AB%E3%80%81%E6%97%A9%E7%9D%A1%E6%97%A9%E8%B5%B7%EF%BC%8C%E7%9C%9F%E7%9A%84%E4%B8%8D%E6%98%AF%E5%9C%A8%E8%87%AA%E5%BE%8B%2F</url>
-    <content type="text"></content>
+    <title><![CDATA[hexo 常用命令]]></title>
+    <url>%2F2018%2F07%2F17%2Fhexo-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[新建、删除文章新建、删除或修改文章后，不需要重启hexo server，刷新一下即可预览。 新建文章 1$ sudo hexo new "new-article" 文字的标题也可以在对应的 md 文件中修改 之后在source/_posts目录下面，多了一个new-article.md的文件。 删除文章 123* 删除 db.json* 删除 xx.md 文章, 文件夹中搜索标题 xx 相关文件，html文件一并删除* 执行 hexo clean 、hexo g 、hexo d 即可 清理缓存清理缓存文件 db.json 和 已生成的静态文件 public 当你对站点的修改怎么都不起作用时，执行该命令 1$ sudo hexo clean 生成静态文件1$ sudo hexo generate 该命令也可以简写成 1$ sudo hexo g 启动服务器启动本地服务服务器，预览网页。默认情况下地址为 http://localhost:4000/ 1$ sudo hexo server 简写 1$ sudo hexo s 部署网站生成网站静态文件，部署到远程仓库 1$ sudo hexo deploy 简写 1$ sudo hexo d]]></content>
+      <categories>
+        <category>开发</category>
+      </categories>
+      <tags>
+        <tag>iOS开发</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[iOS开发-集成百度云推送遇到的问题]]></title>
