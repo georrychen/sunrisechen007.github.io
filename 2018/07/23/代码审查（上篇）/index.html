@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="读后感," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -86,18 +86,21 @@
 
 
 
-<meta name="description" content="1抄写自 林夏:&amp;lt;https://zhuanlan.zhihu.com/p/38251783&amp;gt; 只要我自律，我就能……   每个时代都有每个时代的成功学，自律不幸成为了其中的一个，那么什么是自律？ 钟表一样的生活不是自律你每天健身、读书、按时起床，每天像上了发条的钟表一样生活，真的不是在自律。 有看到过新闻，一个女生在已经连续加班并且重感冒的情况下还坚持去健身房锻炼，结果导致突发心肌炎">
-<meta name="keywords" content="读后感">
+<meta name="description" content="参考链接 http://oriochan.com/codeReview01.html https://www.jianshu.com/p/c6cc551e2ca3 http://docs.oclint.org/en/stable/rules/index.html http://www.cocoachina.com/ios/20170928/20669.html  前言本篇文章主要介绍  OCLin">
 <meta property="og:type" content="article">
-<meta property="og:title" content="你每天读书、健身、早睡早起，真的不是在自律">
-<meta property="og:url" content="http://yoursite.com/2018/07/17/你每天读书、健身、早睡早起，真的不是在自律/index.html">
+<meta property="og:title" content="OCLint + Xcode 代码审查（上篇）">
+<meta property="og:url" content="http://yoursite.com/2018/07/23/代码审查（上篇）/index.html">
 <meta property="og:site_name" content="陈旭的博客">
-<meta property="og:description" content="1抄写自 林夏:&amp;lt;https://zhuanlan.zhihu.com/p/38251783&amp;gt; 只要我自律，我就能……   每个时代都有每个时代的成功学，自律不幸成为了其中的一个，那么什么是自律？ 钟表一样的生活不是自律你每天健身、读书、按时起床，每天像上了发条的钟表一样生活，真的不是在自律。 有看到过新闻，一个女生在已经连续加班并且重感冒的情况下还坚持去健身房锻炼，结果导致突发心肌炎">
+<meta property="og:description" content="参考链接 http://oriochan.com/codeReview01.html https://www.jianshu.com/p/c6cc551e2ca3 http://docs.oclint.org/en/stable/rules/index.html http://www.cocoachina.com/ios/20170928/20669.html  前言本篇文章主要介绍  OCLin">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-17T08:55:33.699Z">
+<meta property="og:image" content="http://yoursite.com/2018/07/23/代码审查（上篇）/OClint/00.png">
+<meta property="og:image" content="http://yoursite.com/2018/07/23/代码审查（上篇）/OClint/03.png">
+<meta property="og:image" content="http://yoursite.com/2018/07/23/代码审查（上篇）/OClint/04.png">
+<meta property="og:updated_time" content="2018-07-23T08:11:21.652Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="你每天读书、健身、早睡早起，真的不是在自律">
-<meta name="twitter:description" content="1抄写自 林夏:&amp;lt;https://zhuanlan.zhihu.com/p/38251783&amp;gt; 只要我自律，我就能……   每个时代都有每个时代的成功学，自律不幸成为了其中的一个，那么什么是自律？ 钟表一样的生活不是自律你每天健身、读书、按时起床，每天像上了发条的钟表一样生活，真的不是在自律。 有看到过新闻，一个女生在已经连续加班并且重感冒的情况下还坚持去健身房锻炼，结果导致突发心肌炎">
+<meta name="twitter:title" content="OCLint + Xcode 代码审查（上篇）">
+<meta name="twitter:description" content="参考链接 http://oriochan.com/codeReview01.html https://www.jianshu.com/p/c6cc551e2ca3 http://docs.oclint.org/en/stable/rules/index.html http://www.cocoachina.com/ios/20170928/20669.html  前言本篇文章主要介绍  OCLin">
+<meta name="twitter:image" content="http://yoursite.com/2018/07/23/代码审查（上篇）/OClint/00.png">
 
 
 
@@ -139,7 +142,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/07/17/你每天读书、健身、早睡早起，真的不是在自律/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/23/代码审查（上篇）/"/>
 
 
 
@@ -147,7 +150,7 @@
 
 <link href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css" rel="stylesheet">
 
-  <title>你每天读书、健身、早睡早起，真的不是在自律 | 陈旭的博客</title>
+  <title>OCLint + Xcode 代码审查（上篇） | 陈旭的博客</title>
   
 
 
@@ -318,7 +321,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/17/你每天读书、健身、早睡早起，真的不是在自律/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/23/代码审查（上篇）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Georry Chen">
@@ -335,7 +338,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">你每天读书、健身、早睡早起，真的不是在自律</h1>
+          <h1 class="post-title" itemprop="name headline">OCLint + Xcode 代码审查（上篇）</h1>
         
 
         <div class="post-meta">
@@ -347,8 +350,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-17T16:46:43+08:00">
-                2018-07-17
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-23T15:18:43+08:00">
+                2018-07-23
               </time>
             
 
@@ -358,28 +361,6 @@
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/观后感/" itemprop="url" rel="index">
-                    <span itemprop="name">观后感</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -387,7 +368,7 @@
 
           
           
-             <span id="/2018/07/17/你每天读书、健身、早睡早起，真的不是在自律/" class="leancloud_visitors" data-flag-title="你每天读书、健身、早睡早起，真的不是在自律">
+             <span id="/2018/07/23/代码审查（上篇）/" class="leancloud_visitors" data-flag-title="OCLint + Xcode 代码审查（上篇）">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -412,7 +393,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  3,242
+                  1,141
                 </span>
               
 
@@ -437,116 +418,51 @@
       
 
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">抄写自 林夏:&lt;https://zhuanlan.zhihu.com/p/38251783&gt;</span><br></pre></td></tr></table></figure>
-<p>只要我自律，我就能……  </p>
-<p>每个时代都有每个时代的成功学，自律不幸成为了其中的一个，那么什么是自律？</p>
-<h4 id="钟表一样的生活不是自律"><a href="#钟表一样的生活不是自律" class="headerlink" title="钟表一样的生活不是自律"></a>钟表一样的生活不是自律</h4><p>你每天健身、读书、按时起床，每天像上了发条的钟表一样生活，真的不是在自律。</p>
-<p>有看到过新闻，一个女生在已经连续加班并且重感冒的情况下还坚持去健身房锻炼，结果导致突发心肌炎。这还能叫自律吗？</p>
-<h4 id="自律需要消耗能量"><a href="#自律需要消耗能量" class="headerlink" title="自律需要消耗能量"></a>自律需要消耗能量</h4><p>这是已经经过科学家证实了，人的意志力和大脑中血糖水平的高低有关，关键时候给一些真正含有糖分的饮料，补充能量，就可以有效提高意志力。而补充有甜味的无糖饮料，就没有这个效果。</p>
+        <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ol>
+<li><a href="http://oriochan.com/codeReview01.html" target="_blank" rel="noopener">http://oriochan.com/codeReview01.html</a></li>
+<li><a href="https://www.jianshu.com/p/c6cc551e2ca3" target="_blank" rel="noopener">https://www.jianshu.com/p/c6cc551e2ca3</a></li>
+<li><a href="http://docs.oclint.org/en/stable/rules/index.html" target="_blank" rel="noopener">http://docs.oclint.org/en/stable/rules/index.html</a></li>
+<li><a href="http://www.cocoachina.com/ios/20170928/20669.html" target="_blank" rel="noopener">http://www.cocoachina.com/ios/20170928/20669.html</a></li>
+</ol>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本篇文章主要介绍  OCLint 的基本概念，如何使用 OCLint 自带的规则在 XCode 中审查代码.</p>
+<h2 id="OCLint是什么？"><a href="#OCLint是什么？" class="headerlink" title="OCLint是什么？"></a>OCLint是什么？</h2><p>它是一个静态代码分析工具，可以检查 C、C++ 和 OC代码的质量。它有一套自带的代码规范，你可通过修改这些规则来达到规范代码的目的，比如你可以修改规则<code>LONG_LINE</code>， 来规定函数和参数列表的长度不可以超过100个字符，那么Xcode在编译时，会把不符合这个规则的代码在 XCode 中标记出来，以到达代码审查的作用，你也可以把统计结果以  <code>html</code>  的格式输出。 具体的规则，可组合选择，灵活应用</p>
+<p>OCLint 自带扫描规则约 70 种，具体可见官网.<br> <a href="http://docs.oclint.org/en/stable/rules/index.html" target="_blank" rel="noopener">http://docs.oclint.org/en/stable/rules/index.html</a></p>
+<p>下图图是一些常用的规则，具体如何使用，会在 XCode 配置脚本文件中详细介绍. </p>
+<p><img src="OClint/00.png" alt="图1"> </p>
+<h2 id="OCLint-怎么安装？"><a href="#OCLint-怎么安装？" class="headerlink" title="OCLint 怎么安装？"></a>OCLint 怎么安装？</h2><p>它有两种安装方式，一种是通过 Homebrew 安装，方便简单，缺点是不能自定义审核 规则；另一种是 下载源代码安装，步骤略复杂，但是我们可编写审核规则，将在下篇中介绍。</p>
+<h3 id="1-通过-Homebrew-安装"><a href="#1-通过-Homebrew-安装" class="headerlink" title="1. 通过 Homebrew 安装"></a>1. 通过 Homebrew 安装</h3><p>打开终端输入如下三个命令，等待几分钟即可<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.  ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”</span><br><span class="line">2.  brew tap oclint/formulae</span><br><span class="line">3.  brew install oclint</span><br></pre></td></tr></table></figure></p>
+<p>安装完成后，重启终端，输入如下命令检查是否安装成功<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">oclint --version   ```  </span><br><span class="line">当看到输出 oclint 版本号，说明成功了</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">### 2. 通过 下载 OCLint 源代码 安装</span><br><span class="line">将在下篇中介绍</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">## 在 XCode 中怎么使用？</span><br><span class="line"></span><br><span class="line">安装成功后，下面就可以在 XCode 中使用啦，配置好相关信息后，就可以编译进行静态分析啦。由于各人的电脑配置不同，如果全部分析的话，可能会花个几分钟的时间，需耐心等待。下图是具体的步骤  </span><br><span class="line"></span><br><span class="line">### 1. 打开项目，新建一个 Aggregate 模板</span><br><span class="line"></span><br><span class="line">![图2](OClint/01.png)</span><br><span class="line"></span><br><span class="line">### 2. 新建脚本文件，制定代码审核规则</span><br><span class="line"></span><br><span class="line">![图2](OClint/02.png)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">本例中的脚本文件内容为：</span><br></pre></td></tr></table></figure></p>
+<p>source ~/.bash_profile<br>cd ${SRCROOT}<br>xcodebuild clean<br>xcodebuild | tee xcodebuild.log<br>oclint-xcodebuild<br>oclint-json-compilation-database \<br>-e Vendor \<br>-e Pods \<br>– \<br>-disable-rule ObjCAssignIvarOutsideAccessors \<br>-rc=LONG_VARIABLE_NAME=20 \<br>-rc=LONG_LINE=200 \<br>-max-priority-1 100000 \<br>-max-priority-2 100000 \<br>-max-priority-3 100000 \<br>-report-type xcode </p>
+<p><code>`</code></p>
 <blockquote>
-<p>去boss的办公室谈重要的事情，别在快到饭点的时候去，你的方案基本都会被毙。</p>
+<p>-e Vendor \ :  不扫描这个 Vendor 文件夹里的内容<br>-disable-rule ObjCAssignIvarOutsideAccessors \  :  表示忽略这个规则<br>rc=LONG_LINE=200 \ :  表示遵守 LONG_LINE 这个规则，并限定值为200</p>
 </blockquote>
-<h4 id="自律的本质是自我管理"><a href="#自律的本质是自我管理" class="headerlink" title="自律的本质是自我管理"></a>自律的本质是自我管理</h4><p>是不是到了临近期末考的时候，就懒得去收拾寝室的房间了？</p>
-<p>是不是公司总是加班的时候，自己订的学习计划就荒废了？</p>
-<p>你不是不自律，你只是可用的能量太少，需要消耗的能量太多。</p>
-<p>人的能量就那么多，所以自律的本质，是自我觉察和自我管理。</p>
-<h4 id="自我察觉"><a href="#自我察觉" class="headerlink" title="自我察觉"></a>自我察觉</h4><p>我曾经有段时间视觉疲劳比较厉害，而且还喜欢玩手机，  </p>
-<p>于是，我给自己定了一个规矩，那就是，走路的时候不看手机。之后，我的视觉疲劳有所好转。 </p>
-<p>而通过这一次的训练，我发觉了，人可以用自己的大脑控制自己的大脑。  </p>
-<p>就好像在自己身后放置一个小的摄像头，可以随时觉察到自己在想什么</p>
-<p>你会察觉到自己上班的时候走神。或者看书的时候在刷朋友圈。</p>
-<p>而这种自我察觉的能力是可以迁移的。</p>
-<p>有了戒手机的习惯，我发觉自己具有随时将自己拉回来的能力。</p>
-<p>这种能力，你约训练，它就越强。</p>
-<p>有了强大的自我察觉能力，这是自律的基础，只有了解自己的能量，才能合理分配它。</p>
-<p>不如每天练练冥想。</p>
-<h4 id="自律就是精要主义"><a href="#自律就是精要主义" class="headerlink" title="自律就是精要主义"></a>自律就是精要主义</h4><p>日程表全部挤满，就难免会故此失彼。</p>
-<p>less is more. 做的更少，做的更好。</p>
-<p>因为能量有限，所以需要对任务有所取舍。</p>
-<p>虽然说是自我管理，但是我举一个公司管理的例子。</p>
-<p>一个公司，总共也就10个人，但是老板的野心却不小，既想做电商，又想做内容付费，还想做线下，内容还没做出来，又想着去做社群运营。</p>
-<p>如果真的有这个实力也就罢了，可是公司运营了三年，一个像样的拳头商品都拿不出来。</p>
-<p>当初还不如就集中精力做好一个产品，做好了一个，再扩充其它的产品线。</p>
-<p>当年乔布斯回归苹果，不是大刀阔斧的简化了产品线吗？</p>
-<p><em>同一个时间段，只给自己安排一个重要的事情.</em></p>
-<p>小朋友总想着要当科学家，当宇航员，觉得自己人生充满无限可能</p>
-<p>大学毕业几年之后，栽了几个跟斗，发现念念不忘的事情未必就有回响，无心插柳的事情反而成荫，这时就知道了自己是什么样的人，该走什么样的路。</p>
-<p><code>对无关的事儿保持拒绝，不是你的东西强求不来</code></p>
-<h4 id="只有精要主义才能斜杠青年"><a href="#只有精要主义才能斜杠青年" class="headerlink" title="只有精要主义才能斜杠青年"></a>只有精要主义才能斜杠青年</h4><p>不好意思，前面说到精要主义，耽误你们做斜杠了。</p>
-<p>真的不是同时做很多事情就是斜杠了。</p>
-<p>没有前面一件事的收益养着，哪有时间和精力做后面一件事儿。</p>
-<p>编一个例子：一个人，先学会了编程，找了一份工作，之后开始在网上分享自己的经验心得，最后开了一个编程培训班。</p>
-<p>这时候他算是一个斜杠了，程序员/培训讲师/培训机构运营管理者</p>
-<p>你让他一边学编程一边做培训试试？</p>
-<h5 id="先把一件事做通了，少量的精力维护就能给自己带来收益，去做下一件事"><a href="#先把一件事做通了，少量的精力维护就能给自己带来收益，去做下一件事" class="headerlink" title="先把一件事做通了，少量的精力维护就能给自己带来收益，去做下一件事"></a>先把一件事做通了，少量的精力维护就能给自己带来收益，去做下一件事</h5><p>这个收益还真不一定是💰，比如学好英语，可以查国外网站的资料给自己的学习和工作带来方便也算呀。</p>
-<h4 id="动态平衡"><a href="#动态平衡" class="headerlink" title="动态平衡"></a>动态平衡</h4><p>记得以前有记者在综艺上采访不老女神赵雅芝，问她为什么能够做到既能拍出好的作品，又能在家抚养孩子长大。</p>
-<p>赵雅芝说，其实兼顾是兼顾不了的，带孩子的时候就专心带孩子，拍戏的时候就专心拍戏。</p>
-<p><code>我们不可能在一天中把自己想做的所有事情都做一遍，因为这样的一天需要72小时</code></p>
-<p>每天给自己安排1-2件重要的事情，做好。</p>
-<blockquote>
-<p>知乎上有一个人，说他的导师会熬夜、会吃不健康的食物、但是在学术上仍然保持了超高的产出，看上去不自律，但是在许多领域都有杰出成果。其实这就是一种动态平衡啊。</p>
+<h3 id="PS"><a href="#PS" class="headerlink" title="PS:"></a>PS:</h3><blockquote>
+<ul>
+<li>上面的脚本内容，不能有空格，有注释，不然编译结果会标红（规则不起作用），不标黄，不知道啥原因。 </li>
+<li>编译结果报告除了可在 XCode 中输出，也可以以网页的形式显示结果，只需要把  -report-type xcode 修改 -report-type html -o oclintReport.html 即可编译完成后生一个网页文件</li>
+<li>每次编译前需要 clean 一下 </li>
+</ul>
 </blockquote>
-<p>几件事同时进行的时候，试着用<code>动态平衡</code>，将几件事循环起来做。</p>
-<blockquote>
-<p>比如说：</p>
-<p>我要做摄影编辑，要懂写作，又要懂摄影，但是我也不能将摄影水平提升到职业摄影师的高度再研究写作套路啊。  </p>
-<p>如果我现在写不出文章的瓶颈在写作，我就突破写作。写作套路掌握的差不多了，发现摄影知识限制了我，那么我就去了解摄影知识。之后发现写作水平又限制我发展了，那我就再研究更多写作套路。</p>
-</blockquote>
-<p>所以我学习的顺序可能是A-B-A-B……循环进步，动态平衡。</p>
-<p>这也不算违背精要主义呀，因为所有的事情都是围绕同一个目标的（把摄影编辑做好）。</p>
-<h4 id="自律就是要给自己减少阻力"><a href="#自律就是要给自己减少阻力" class="headerlink" title="自律就是要给自己减少阻力"></a>自律就是要给自己减少阻力</h4><blockquote>
-<p>以前上高中的时候，我们语文老师说，他观察到一个现象,班级里面成绩比较好的学生都是离家近的，住的远的孩子本来通勤就耽误了时间，因为路远，所以路上也更累，回到家还想多歇歇，这样每天比别人少了一个小时的时间。自然学不过别人了。</p>
-</blockquote>
-<p>在事情没有完成的时候，可能我们更多时候是自责没有意志力，却忘记考虑事情真正的阻力。</p>
-<p>我有个朋友，念大学的时候报了一个绘画班，可是到了最后，总共也没有去几次，自然他是没有学成，我问他说，这事儿后来为什么没结果了，他说，因为自己没有坚持下来。</p>
-<p>我说，不对，你没有好好的分析，这件事儿其实是有很多原因的，</p>
-<p>你报班，自己有美术基础吗？</p>
-<p>你回宿舍有没有上自习的条件，室友是否打LOL影响你，如果影响你，你是否考虑自己租房？</p>
-<p>培训班的老师讲的好不好，如果你有不懂的他是否能及时的答疑。</p>
-<p>如果这背后的细节你都分析了，想办法去解决了，这个班你怎么会学不下来。 <strong>不要施压，要润滑</strong></p>
-<h4 id="按照投入做计划"><a href="#按照投入做计划" class="headerlink" title="按照投入做计划"></a>按照投入做计划</h4><p>导致你挫败感的，不是你的无能，而是对你不合理的期许。</p>
-<p>人在开始做一件事情之前根本没有给自己制定计划的能力。</p>
-<p>我最近在学python数据分析，网课，一个小节的视频是15分钟</p>
-<p>我原先给自己定的是一天学4个小节，总计一个小时，看起来合理又完美。</p>
-<p>但是当我真正学起来的时候，才发现真实的情况根本不是这样，对于没有编程基础的我来说，学一个小小的知识点都需要花上一段时间去理解，加上要在实际的编程环境中（jupyter notebook）去试，有时候真的是“视频5分钟，操作2小时”</p>
-<p>所以我把计划改为，每天学2个小时，能学多少算多少（一般是1-2个小节，不强求），然而不知不觉已经学了很多了，并没有比预想的慢。</p>
-<p>所以，别再说什么 <code>不瘦十斤，不改头像</code></p>
-<p>不如换成，每周锻炼三次，每次半小时。</p>
-<h4 id="小习惯自己会成长"><a href="#小习惯自己会成长" class="headerlink" title="小习惯自己会成长"></a>小习惯自己会成长</h4><p><code>一次写5000字，不如每天写300字。</code></p>
-<p>三国杀标准包中，输出最高的不是技能华丽的孙尚香、黄月英，而是武圣关羽，红牌当杀，朴实无华的技能，却能给对手最大的压力。</p>
-<p>美国心理学家吉姆柯林斯提出过一个著名的“二十英里法则”，讲的是从美国西海岸圣地亚哥到某个地方有一段三千英里的路程，这段路程地貌十分复杂，而且经常会遭遇天气变化。探险者如何才能以最快的速度通过这段路程呢？</p>
-<p>答案是日行20英里，即每天走32公里。晴天不多走，雨天不偷懒。</p>
-<p>我刚刚开始练习写作的时候，工作非常忙，但是我给自己立了一个flag，每周最少写300字，真是相当低的要求。</p>
-<p>有一次我出去玩了，没时间写，于是我将自己初来上海的时候逛法租界拍的照片凑够了300字发在了公众号上， 有一种完成任务的圆满感。</p>
-<p>自从立了flag以来，我发现自己的公众号几乎都是周更的。</p>
-<p>只有一次加班特别忙，然后在地铁上用手机写了一篇短文，发在了知乎上。</p>
-<p>但是每次也不是真的只写300字，比如这篇文章就很长。</p>
-<p><code>先给自己一个好的小习惯，不论多小，习惯自己会生长。</code></p>
-<p>想要读书？把书放在床头，每天睡前翻开一次就行了，不信？可以试试</p>
-<h4 id="咸鱼是无敌的存在"><a href="#咸鱼是无敌的存在" class="headerlink" title="咸鱼是无敌的存在"></a>咸鱼是无敌的存在</h4><p>请卸下自己的偶像包袱。</p>
-<p>立志要减肥，可是三个月过去了还没瘦下来怎么办。我好失败。</p>
-<p>立志要写作，写了半年了微信公众号还是只有几十个粉丝怎么办，完了自己好失败，我不写了。</p>
-<p>我现在要学python，</p>
-<p>什么？别人刚刚学3个月，就已经开发出属于自己的小工具，给自己的公众号吸粉了？</p>
-<p>没关系的，像我这样的咸鱼，能照着视频把代码打一遍，做到无bug，就已经很好了啊。</p>
-<p>当人开始原谅自己的时候，就会变的很强大，因为你向前走的每一步，对你来说都是赚到。</p>
-<p>再也不会因为达不到自己不切实际的预期而失望自责。</p>
-<p>咸鱼无敌！</p>
-<p>为什么这样说呢，因为前面说到，意志力其实是一种心理能量，而过分的自责其实是对自我的一种消耗。</p>
-<p>所以说心态放轻松很重要。</p>
-<pre><code>接受自己的不完美。
-</code></pre><h4 id="对身份和目标的认同"><a href="#对身份和目标的认同" class="headerlink" title="对身份和目标的认同"></a>对身份和目标的认同</h4><p>作家写完了东西，设计师做完了设计，应该是充满了满足感和愉悦感的。</p>
-<p>站起来走一走，听一首歌就是很好的放松和休息了。</p>
-<p>但是如果你工作的心情比上坟还难受，做完了工作感觉自己必须要通过吃鸡打王者才能犒劳自己，</p>
-<p>那么你一定是在强迫自己做自己不喜欢的事情。</p>
-<p>接近目标本身就是奖励。</p>
-<p>不然呢？减肥终于成功了，吃一块巧克力犒劳自己一下？</p>
-<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>自律在于自我管理，而非自我控制。人需要察觉自身精力消耗，分配好自己的能量，</p>
-<p>秉持精要主义的态度，安排自己的生活。</p>
-<p>放下偶像包袱，用“做了一点就赚到一点”的心态，保持平常心，努力向自己的目标推进。</p>
-<p>与朋友们共勉。</p>
-<hr>
-<h3 id="观后感"><a href="#观后感" class="headerlink" title="观后感"></a>观后感</h3><p>文章写的很好，我们无论想做什么事情，没有一个好的纪律，不能坚持，有怎么可能会成功哪。 自律是对自己的一个掌控</p>
+<h3 id="3-编译"><a href="#3-编译" class="headerlink" title="3. 编译"></a>3. 编译</h3><p>选择scheme 选择新建的 Aggregate (本例中名为 OCLint )  ( Command + B ) 运行，<br>等待一会儿即可，结果如下图，左侧黄色警告的为不符合规则的代码  </p>
+<p><img src="OClint/03.png" alt="图2">  </p>
+<p><img src="OClint/04.png" alt="图2"></p>
+<h2 id="自定义Rule"><a href="#自定义Rule" class="headerlink" title="自定义Rule"></a>自定义Rule</h2><p>OCLint本身提供了<code>70+</code>的检查规则，如果这些不能满足需要的话，我们就需要自定义规则了，注意： 如果你需要自定义规则，当然这些也是应该很多公司实际需要的，那么你的安装方式就就必须是 “<code>源代码安装</code>”<br>由于这个步骤略复杂，将在下篇中说明。</p>
+<p><strong>未完待续~~~</strong></p>
+<h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><p>下面是一些常见规则脚本代码：</p>
+<p><code>`</code>python<br>-disable-rule ObjCAssignIvarOutsideAccessors \</p>
+<p>#switch - case 的最小数目，默认为 3<br>-rc=MINIMUM_CASES_IN_SWITCH=3 \ </p>
+<p>#参数名字符限制，默认 20<br>-rc=LONG_VARIABLE_NAME=200 \ </p>
+<p>#忽略，变量名最小字符数限制默认3<br>-disable-rule ShortVariableName \</p>
+<p>#循环嵌套数限制，默认10<br>-rc=CYCLOMATIC_COMPLEXITY=10 \ </p>
+<p>#类行数限制，默认 1000<br>-rc=LONG_CLASS=7 \ </p>
+<p>#每行的字符限制，默认 100<br>-rc=LONG_LINE=200 \ </p>
+<p>#方法行数限制，默认 50<br>-rc=LONG_METHOD=80 \ </p>
+<p>#连续未注释行数限制<br>-rc=NCSS_METHOD=10 \ </p>
+<p>#block嵌套层数限制，默认 5<br>-rc=NESTED_BLOCK_DEPTH=5 \ </p>
+<p>#类成员的限制，默认20<br>-rc=TOO_MANY_FIELDS=20 \ </p>
+<p>#类方法的限制，默认30<br>-rc=TOO_MANY_METHODS=30 \ </p>
+<p>#参数个数限制，默认10<br>-rc=TOO_MANY_PARAMETERS=10 \ </p>
 
       
     </div>
@@ -567,7 +483,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yoursite.com/2018/07/17/你每天读书、健身、早睡早起，真的不是在自律/" title="你每天读书、健身、早睡早起，真的不是在自律">http://yoursite.com/2018/07/17/你每天读书、健身、早睡早起，真的不是在自律/</a>
+    <a href="http://yoursite.com/2018/07/23/代码审查（上篇）/" title="OCLint + Xcode 代码审查（上篇）">http://yoursite.com/2018/07/23/代码审查（上篇）/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -580,12 +496,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/读后感/" rel="tag"># 读后感</a>
-          
-        </div>
-      
 
       
       
@@ -595,8 +505,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/17/hexo-常用命令/" rel="next" title="hexo 常用命令">
-                <i class="fa fa-chevron-left"></i> hexo 常用命令
+              <a href="/2018/07/17/你每天读书、健身、早睡早起，真的不是在自律/" rel="next" title="你每天读书、健身、早睡早起，真的不是在自律">
+                <i class="fa fa-chevron-left"></i> 你每天读书、健身、早睡早起，真的不是在自律
               </a>
             
           </div>
@@ -604,10 +514,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/07/23/代码审查（上篇）/" rel="prev" title="OCLint + Xcode 代码审查（上篇）">
-                OCLint + Xcode 代码审查（上篇） <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -743,7 +649,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#钟表一样的生活不是自律"><span class="nav-number">1.</span> <span class="nav-text">钟表一样的生活不是自律</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自律需要消耗能量"><span class="nav-number">2.</span> <span class="nav-text">自律需要消耗能量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自律的本质是自我管理"><span class="nav-number">3.</span> <span class="nav-text">自律的本质是自我管理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自我察觉"><span class="nav-number">4.</span> <span class="nav-text">自我察觉</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自律就是精要主义"><span class="nav-number">5.</span> <span class="nav-text">自律就是精要主义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#只有精要主义才能斜杠青年"><span class="nav-number">6.</span> <span class="nav-text">只有精要主义才能斜杠青年</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#先把一件事做通了，少量的精力维护就能给自己带来收益，去做下一件事"><span class="nav-number">6.1.</span> <span class="nav-text">先把一件事做通了，少量的精力维护就能给自己带来收益，去做下一件事</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#动态平衡"><span class="nav-number">7.</span> <span class="nav-text">动态平衡</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自律就是要给自己减少阻力"><span class="nav-number">8.</span> <span class="nav-text">自律就是要给自己减少阻力</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#按照投入做计划"><span class="nav-number">9.</span> <span class="nav-text">按照投入做计划</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#小习惯自己会成长"><span class="nav-number">10.</span> <span class="nav-text">小习惯自己会成长</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#咸鱼是无敌的存在"><span class="nav-number">11.</span> <span class="nav-text">咸鱼是无敌的存在</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#对身份和目标的认同"><span class="nav-number">12.</span> <span class="nav-text">对身份和目标的认同</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结"><span class="nav-number">13.</span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#观后感"><span class="nav-number"></span> <span class="nav-text">观后感</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#参考链接"><span class="nav-number">1.</span> <span class="nav-text">参考链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">2.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OCLint是什么？"><span class="nav-number">3.</span> <span class="nav-text">OCLint是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OCLint-怎么安装？"><span class="nav-number">4.</span> <span class="nav-text">OCLint 怎么安装？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-通过-Homebrew-安装"><span class="nav-number">4.1.</span> <span class="nav-text">1. 通过 Homebrew 安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PS"><span class="nav-number">4.2.</span> <span class="nav-text">PS:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-编译"><span class="nav-number">4.3.</span> <span class="nav-text">3. 编译</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义Rule"><span class="nav-number">5.</span> <span class="nav-text">自定义Rule</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附录"><span class="nav-number">6.</span> <span class="nav-text">附录</span></a></li></ol></div>
             
 
           </div>
